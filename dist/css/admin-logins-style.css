@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --linear-grad: linear-gradient(to right, #B97429, #C8792A);
+    --grad-clr1: #B97429;
+    --grad-clr2: #C8792A;
+}
+
+body {
+    height: 100vh;
+    background: #f6f5f7;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.admin-login .container {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 75vh;
+    background-color: #fff;
+    box-shadow: 25px 30px 55px #5557;
+    border-radius: 13px;
+    overflow: hidden;
+
+}
+
+.admin-profile-logo {
+    width: 10rem;
+    height: 10rem;
+}
+
+.admin-login .form-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    padding-bottom: 20px;
+
+    transition: all 0.6s ease-in-out;
+}
+
+.admin-login .form-container button {
+    position: relative;
+    margin-top: 25px;
+}
+
+.title-text {
+    position: relative;
+    text-align: center;
+    margin-top: -30px;
+}
+body#Customer-Login{
+    min-width: 950px;
+}
+
+.container {
+    position: relative;
+    width: 850px;
+    height: 80vh;
+    background-color: #fff;
+    box-shadow: 25px 30px 55px #5557;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.form-container {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    padding: 0 40px;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    z-index: 2;
+}
+
+form {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 0 5px;
+}
+
+h1 {
+    color: var(--grad-clr1);
+    margin: 20px 0;;
+}
+
+span {
+    font-size: 12px;
+}
+
+.infield {
+    position: relative;
+    margin: 8px 0;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #f3f3f3;
+    border: none;
+    outline: none;
+}
+
+label {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background: var(--linear-grad);
+    transition: 0.3s;
+}
+
+input:focus ~ label {
+    width: 100%;
+}
+
+a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px;
+}
+
+a.forgot {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #eee;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid var(--grad-clr1);
+    background: var(--grad-clr2);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-container button {
+    margin-top: 17px;
+    transition: 80ms ease-in;
+}
+
+.form-container button:hover {
+    background: #fff;
+    color: var(--grad-clr1);
+}
+
+@keyframes show {
+    0%, 50% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50.1%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}

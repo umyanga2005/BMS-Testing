@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.login_title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login_box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.login_box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.login_box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #ffbc00;
+    color: #fff;
+}
+
+.login_check {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.login_check a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login_check a:hover {
+    text-decoration: underline;
+}
+
+.login_forgot {
+    color: white;
+    text-decoration: underline;
+}
+
+.login_forgot:hover {
+    color: #ffbc00;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 20px;
+}
+
+.login a:hover {
+    color: #ffbc00;
+}
+
+   /* Register-Login Section */
+.register-login {
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.register-login a {
+    color: #ffbc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-login a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+    .login {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login_title {
+        font-size: 1.5rem;
+    }
+
+    .register-login {
+        font-size: 16px;
+    }
+}
+

@@ -1,0 +1,14 @@
+
+.Favourite__container {
+    margin-top: 50px;
+  }
+
+  .Favourite__container.container.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; 
+  }
+
+  .favorite__card {
+    width: auto;
+  }
